@@ -166,6 +166,16 @@ html, body {
   width: 1%;
 }
 
+/* Chia đều 50-50 cho các bảng chỉ có 2 cột (AS-IS / TO-BE) */
+.markdown-body table tr th:first-child:nth-last-child(2),
+.markdown-body table tr th:first-child:nth-last-child(2) ~ th,
+.markdown-body table tr td:first-child:nth-last-child(2),
+.markdown-body table tr td:first-child:nth-last-child(2) ~ td {
+  width: 50%;
+  white-space: normal; /* Ghi đè nowrap của thẻ first-child */
+  min-width: 200px;
+}
+
 .markdown-body tr:nth-child(even) td { 
   background: #fafafa; 
 }
