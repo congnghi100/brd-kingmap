@@ -42,10 +42,78 @@ html, body {
   animation: fadeIn 0.8s ease-out forwards;
 }
 
+/* Layout */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 320px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #f9fafb;
+  border-right: 1px solid var(--c-border);
+  padding: 40px 24px;
+  overflow-y: auto;
+}
+
+.sidebar-header h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-left: 10px;
+}
+
+.toc-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-nav li {
+  margin-bottom: 8px;
+}
+
+.toc-nav a {
+  text-decoration: none;
+  color: var(--c-text);
+  font-size: 15px;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  line-height: 1.4;
+}
+
+.toc-nav a:hover {
+  background: var(--c-primary-soft);
+  color: var(--c-primary);
+}
+
+.toc-nav a.active {
+  background: var(--c-primary);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(11, 94, 215, 0.2);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  margin-left: 320px;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 32px 24px 80px;
+  padding: 32px 40px 80px;
 }
 
 /* === MARKDOWN ELEMENTS STYLED AS REFERENCE URL === */
@@ -225,6 +293,13 @@ html, body {
 }
 
 /* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .app-layout { display: block; } /* Bỏ flex để giao diện mobile hoạt động như bình thường */
+  .sidebar { display: none; }
+  .main-content { margin-left: 0; }
+  .container { padding: 32px 24px 80px; }
+}
+
 @media (max-width: 640px) {
   html, body { font-size: 17px; }
   .container { padding: 20px 16px 60px; }
