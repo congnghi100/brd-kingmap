@@ -295,23 +295,42 @@ Phase 4: BizK
 
 ---
 
-## 10. TIMELINE SƠ BỘ
+## 10. TIMELINE SƠ BỘ (ƯỚC TÍNH)
 
-> ⚠️ Timeline cụ thể sẽ được xác định sau khi scope Phase 1 được finalize và team Outsource đưa ra estimation chính thức.
+> ⚠️ Đây là bản ước lượng sơ bộ (High-level Estimation) dựa trên khối lượng tính năng hiện tại. Timeline thực tế sẽ phụ thuộc vào quy mô Team Outsource.
 
-| Phase | Mô tả | Ước tính |
+| Phase / Giai đoạn | Mô tả | Thời lượng ước tính |
 |---|---|---|
-| Phase 0 — Khởi động | Ký hợp đồng Outsource, thiết lập môi trường, kick-off | [CẦN BỔ SUNG] |
-| Phase 1 — KingMap MVP | Xây dựng toàn bộ tính năng Phase 1 (Nhóm A→G) | [CẦN BỔ SUNG] |
-| Phase 2 — ShopLinks | Sau khi KingMap ổn định | [CẦN BỔ SUNG] |
-| Phase 3 — DoStore | Sau ShopLinks | [CẦN BỔ SUNG] |
-| Phase 4 — BizK | Sau DoStore | [CẢN BỔ SUNG] |
+| **Phase 0 — Khởi động & Chuẩn bị** | Chốt yêu cầu (PRD), Thiết kế Kiến trúc hệ thống, Ký hợp đồng, Setup môi trường. | **2 Tuần** (Tuần 1 - Tuần 2) |
+| **Phase 1 — KingMap MVP (Web)** | Phát triển toàn bộ tính năng Nhóm A → G. (Chi tiết bên dưới) | **12 Tuần** (Tuần 3 - Tuần 14) |
+| **Phase 2 — ShopLinks** | Xây dựng nền tảng E-commerce vệ tinh và tích hợp với KingMap. | **12 - 16 Tuần** |
+| **Phase 3 — DoStore** | Quản lý gia phả và mạng xã hội dòng tộc. | [CẦN BỔ SUNG] |
+| **Phase 4 — BizK** | Phần mềm quản trị doanh nghiệp (ERP thu nhỏ). | [CẦN BỔ SUNG] |
 
-**Milestones Phase 1 dự kiến:**
-- M1: Hoàn thành thiết kế UI/UX + Prototype
-- M2: Alpha release (Nhóm A + B + C cơ bản)
-- M3: Beta release (Nhóm D + E + F)
-- M4: Go-live chính thức (toàn bộ Nhóm A→G)
+### Chi tiết Lộ trình Phase 1 (KingMap Web App - 12 Tuần)
+
+| Milestone (Cột mốc) | Tuần thực hiện | Các hạng mục triển khai chính |
+|---|---|---|
+| **M1: UI/UX & Prototype** | **Tuần 3 - Tuần 4** | Thiết kế toàn bộ giao diện Web, luồng người dùng (User Flow), Wireframe & Mockup. |
+| **M2: Alpha Release** | **Tuần 5 - Tuần 8** | - **Nhóm A (User/SSO):** Hệ thống Auth, Profiles, nền tảng DB.<br>- **Nhóm B (Bản đồ):** Tích hợp Google Maps, tạo Marker, popup, Import Excel địa điểm. |
+| **M3: Beta Release** | **Tuần 9 - Tuần 11** | - **Nhóm C (Tìm kiếm):** Bộ lọc, auto-suggest.<br>- **Nhóm D (Gói cước):** Tích hợp thanh toán, phân quyền Premium.<br>- **Nhóm E (Affiliate):** Gen QR Code, ghi nhận click/hoa hồng. |
+| **M4: UAT & Go-Live** | **Tuần 12 - Tuần 14** | - **Nhóm F (Đồng bộ):** Đẩy API hàng hóa/user sang hệ thống khác.<br>- **Nhóm G (Admin):** CMS, duyệt địa điểm, Dashboard thống kê.<br>- **Kiểm thử (UAT)**, sửa lỗi, import Seed Data, cấu hình Server & Go-Live chính thức. |
+
+### Dự toán Nhân sự (Resource Estimation) — Phase 1
+
+Dựa trên khối lượng công việc 12 tuần (khoảng 3 tháng), dưới đây là quy mô team tiêu chuẩn (Scrum Team) cần thiết để đảm bảo tiến độ:
+
+| Vai trò (Role) | Số lượng | Tần suất tham gia | Tổng Effort (Man-month) |
+|---|---|---|---|
+| **Project Manager / Scrum Master** | 1 | Bán thời gian (Part-time) | 1.5 MM |
+| **Business Analyst (BA)** | 1 | Bán thời gian (Part-time) | 1.5 MM |
+| **UI/UX Designer** | 1 | Tập trung cao ở Tháng 1 | 1.5 MM |
+| **Frontend Developer** | 2 | Toàn thời gian (Full-time) | 6.0 MM |
+| **Backend Developer** | 2 | Toàn thời gian (Full-time) | 6.0 MM |
+| **QA / Tester** | 1 | Toàn thời gian (từ M2) | 2.5 MM |
+| **Tổng cộng** | **8 Nhân sự** | | **~ 19 Man-months** |
+
+> 💡 **Lưu ý chi phí:** Dự toán trên tính theo đơn vị Man-month (Tháng công). Chi phí thực tế bằng VND/USD sẽ phụ thuộc vào báo giá đơn giá (Rate card) của Team Outsource hoặc mức lương của team In-house. Trung bình một team 8 người như trên sẽ tốn khoảng 350.000.000đ - 500.000.000đ/tháng tùy năng lực (Mid/Senior).
 
 > 📊 **Lộ trình phát triển hệ sinh thái:**
 
