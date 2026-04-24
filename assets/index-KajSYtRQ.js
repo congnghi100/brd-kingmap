@@ -64,7 +64,7 @@ Khác biệt so với Google Maps (đối thủ benchmark), KingMap tích hợp 
 
 > 📊 **Sơ đồ tổng quan hệ sinh thái BizKingMap:**
 
-![Tổng quan hệ sinh thái BizKingMap](/images/ecosystem_overview_1776907708977.png)
+![Tổng quan hệ sinh thái BizKingMap](images/ecosystem_overview_1776907708977.png)
 
 ---
 
@@ -224,7 +224,7 @@ Phase 4: BizK
 
 > 📊 **Luồng đăng ký & đồng bộ tài khoản SSO:**
 
-![Luồng đăng ký & đồng bộ SSO](/images/sso_sync_flow_1776907734424.png)
+![Luồng đăng ký & đồng bộ SSO](images/sso_sync_flow_1776907734424.png)
 
 ---
 
@@ -247,7 +247,7 @@ Phase 4: BizK
 
 > 📊 **Luồng dữ liệu địa điểm & hàng hóa 2 chiều:**
 
-![Luồng dữ liệu địa điểm & hàng hóa 2 chiều](/images/data_sync_flow_1776907785556.png)
+![Luồng dữ liệu địa điểm & hàng hóa 2 chiều](images/data_sync_flow_1776907785556.png)
 
 ---
 
@@ -266,7 +266,7 @@ Phase 4: BizK
 
 > 📊 **Mô hình gói cước & Monetization:**
 
-![Gói cước & Monetization KingMap](/images/subscription_tiers_1776907760305.png)
+![Gói cước & Monetization KingMap](images/subscription_tiers_1776907760305.png)
 
 ---
 
@@ -352,7 +352,7 @@ Phase 4: BizK
 
 > 📊 **Lộ trình phát triển hệ sinh thái:**
 
-![Lộ trình phát triển BizKingMap](/images/development_roadmap_1776907813126.png)
+![Lộ trình phát triển BizKingMap](images/development_roadmap_1776907813126.png)
 
 ---
 
